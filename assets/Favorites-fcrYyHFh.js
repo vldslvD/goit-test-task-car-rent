@@ -1,0 +1,1 @@
+import{u as t,j as n}from"./index-EIDJvTUZ.js";import{g as i,a as m,C as u}from"./CarList-XK7IndI4.js";const C=()=>{const o=t(i),e=t(m),s=[];return o.forEach(a=>{s.find(r=>r.value===a.make.toLowerCase())||s.push({label:a.make,value:a.make.toLowerCase()})}),n.jsx(u,{options:s,rentCars:e,favorites:e})};export{C as default};
