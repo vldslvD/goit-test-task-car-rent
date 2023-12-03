@@ -17,7 +17,7 @@ export const rentCarsSlice = createSlice({
       .addCase(fetchRentCars.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.items = [...state.items, ...action.payload];
+        state.items = action.payload;
       })
       .addCase(fetchRentCars.rejected, (state, action) => {
         state.isLoading = false;

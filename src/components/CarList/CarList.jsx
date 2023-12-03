@@ -4,7 +4,6 @@ import CarCard from "../CarCard/CarCard";
 import Dropdown from "../Dropdown/Dropdown";
 
 import { CarListContainer, CarSection } from "./CarList.styled";
-import LoadMore from "../LoadMoreBtn/LoadMoreBtn";
 
 const CarList = ({ options, rentCars, favorites }) => {
   const [selectedBrand, setSelectedBrand] = useState(null);
@@ -41,7 +40,6 @@ const CarList = ({ options, rentCars, favorites }) => {
           }
           return <CarCard key={advert.id} advert={advert}></CarCard>;
         })}
-        <LoadMore></LoadMore>
       </CarListContainer>
     </CarSection>
   );

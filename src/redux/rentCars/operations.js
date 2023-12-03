@@ -6,11 +6,22 @@ axios.defaults.baseURL =
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.get['accept'] = 'application/json';
 
+// export const fetchRentCars = createAsyncThunk(
+//   'rentCars/fetchRentCars',
+//   async (credentials, {rejectWithValue}) => {
+//     try {
+//       const response = await axios.get(`/adverts?page=${credentials}&limit=12`);
+//     return response.data;
+//     } catch (error) {
+//       return rejectWithValue(error.message);
+//     }
+//   }
+// );
 export const fetchRentCars = createAsyncThunk(
   'rentCars/fetchRentCars',
-  async (credentials, {rejectWithValue}) => {
+  async (_, {rejectWithValue}) => {
     try {
-      const response = await axios.get(`/adverts?page=${credentials}&limit=12`);
+      const response = await axios.get(`/adverts`);
     return response.data;
     } catch (error) {
       return rejectWithValue(error.message);

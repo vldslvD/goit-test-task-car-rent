@@ -6,6 +6,11 @@ import CarList from "../components/CarList/CarList";
 
 const Adverts = () => {
 
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(rentCarsOperations.fetchRentCars())
+  }, [dispatch])
+
   const rentCars = useSelector(rentCarsSelectors.getRentCars);
   const favorites = useSelector(favoritesSelectors.getFavorites);
   const brandOptions = [];

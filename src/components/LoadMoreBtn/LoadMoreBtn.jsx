@@ -15,13 +15,6 @@ const LoadMore = () => {
     setPage((page) => page + 1);
   };
 
-  useEffect(() => {
-    dispatch(rentCarsOperations.fetchRentCars(page)).then(({ payload }) => {
-      if (payload.length < 12) {
-        setEndOfList(true);
-      }
-    });
-  }, [page, dispatch]);
 
   return (
     <>
