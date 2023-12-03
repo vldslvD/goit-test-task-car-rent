@@ -1,4 +1,4 @@
-import{n as o,j as e}from"./index-EIDJvTUZ.js";const i=o.div`
+import{n as o,j as e}from"./index-Uwo_x4U1.js";const i=o.div`
 display: block;
  width: 100vw;
   height: 100vh;
