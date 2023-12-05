@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { useSelector, useDispatch} from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { rentCarsOperations, rentCarsSelectors } from "../redux/rentCars";
 import { favoritesSelectors } from "../redux/favorites";
 
 import CarList from "../components/CarList/CarList.jsx";
 
 const Favorites = () => {
-
   const rentCars = useSelector(rentCarsSelectors.getRentCars);
   const favorites = useSelector(favoritesSelectors.getFavorites);
   const brandOptions = [];
@@ -18,11 +17,11 @@ const Favorites = () => {
       });
   });
   return (
-      <CarList
-        options={brandOptions}
-        rentCars={favorites}
-        favorites={favorites}
-      ></CarList>
+    <CarList
+      options={brandOptions}
+      rentCars={favorites}
+      favorites={favorites}
+    ></CarList>
   );
 };
 

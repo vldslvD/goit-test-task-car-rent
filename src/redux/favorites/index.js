@@ -1,1 +1,1 @@
-export * as favoritesSelectors from './selectors'
+export * as favoritesSelectors from "./selectors";

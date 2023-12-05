@@ -10,8 +10,11 @@ export const favoritesSlice = createSlice({
       state.items.push(action.payload);
     },
     removeFromFavorites(state, action) {
-      return {...state, items: state.items.filter(advert => advert.id !== action.payload.id)};
+      return {
+        ...state,
+        items: state.items.filter((advert) => advert.id !== action.payload.id),
+      };
     },
-  }
+  },
 });
 export const { addToFavorites, removeFromFavorites } = favoritesSlice.actions;

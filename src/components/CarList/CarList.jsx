@@ -3,7 +3,7 @@ import { useState } from "react";
 import CarCard from "../CarCard/CarCard";
 import Dropdown from "../Dropdown/Dropdown";
 
-import { CarListContainer, CarSection } from "./CarList.styled";
+import { CarListContainer, CarSection, NoData } from "./CarList.styled";
 
 const CarList = ({ options, rentCars, favorites }) => {
   const [selectedBrand, setSelectedBrand] = useState(null);
@@ -28,6 +28,9 @@ const CarList = ({ options, rentCars, favorites }) => {
         onChange={onChange}
       ></Dropdown>
       <CarListContainer>
+        {getFiltered().length === 0 && (
+          <NoData>There are no data</NoData>
+        )}
         {getFiltered().map((advert) => {
           if (favorites.find((i) => i.id === advert.id)) {
             return (

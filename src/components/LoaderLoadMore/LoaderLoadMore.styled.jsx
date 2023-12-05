@@ -1,6 +1,6 @@
-import styled from "@emotion/styled"
+import styled from "@emotion/styled";
 
-import { Triangle } from 'react-loader-spinner';
+import { Triangle } from "react-loader-spinner";
 export const LoaderContainer = styled.div`
   position: fixed;
   top: 0;
@@ -19,4 +19,4 @@ export const CustomTriangle = styled(Triangle)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-`; 
+`;

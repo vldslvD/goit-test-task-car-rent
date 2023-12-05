@@ -13,7 +13,7 @@ export const Backdrop = styled.div`
 `;
 
 export const ModalDiv = styled.div`
-position:relative;
+  position: relative;
   width: 541px;
   height: 752px;
   border-radius: 24px;
@@ -25,9 +25,9 @@ export const ButtonClose = styled.button`
   position: absolute;
   top: 14px;
   right: 14px;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 24px;
   width: 24px;
   border-radius: 50%;
@@ -39,4 +39,4 @@ align-items: center;
   &:focus {
     background-color: var(--supporting-text-color);
   }
-  `;
+`;

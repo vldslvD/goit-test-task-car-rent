@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Backdrop, ModalDiv, ButtonClose } from "./Modal.styled";
 import CardModal from "../CardModal/CardModal";
-import {ReactComponent as Icon} from "../../assets/x.svg"
+import { ReactComponent as Icon } from "../../assets/x.svg";
 
 const modalRoot = document.querySelector("#modal-root");
 export const Modal = ({ onClose, advert }) => {
@@ -28,8 +28,8 @@ export const Modal = ({ onClose, advert }) => {
     <Backdrop onClick={handleBackdropClick}>
       <ModalDiv>
         <ButtonClose onClick={onClose}>
-        <Icon></Icon>
-      </ButtonClose>
+          <Icon></Icon>
+        </ButtonClose>
         <CardModal advert={advert}></CardModal>
       </ModalDiv>
     </Backdrop>,

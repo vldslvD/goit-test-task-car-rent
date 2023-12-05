@@ -25,7 +25,7 @@ export const TitleBox = styled.div`
 `;
 
 export const CardContainer = styled.div`
-position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 40px;
@@ -86,17 +86,17 @@ export const ElContainer = styled.div`
 `;
 
 export const Ellipsis = styled.div`
-margin-bottom:8px;
-margin-right:5px;
+  margin-bottom: 8px;
+  margin-right: 5px;
   font-size: 14px;
   padding: 7px 14px;
   border-radius: 35px;
   background-color: #f9f9f9;
 `;
 export const Button = styled.a`
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   width: 168px;
   margin-top: auto;

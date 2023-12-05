@@ -14,9 +14,7 @@ import {
   RentalCond,
   Ellipsis,
   ElContainer,
-
 } from "./CardModal.styled";
-
 
 const CardModal = ({ advert }) => {
   return (
@@ -54,9 +52,7 @@ const CardModal = ({ advert }) => {
       <RentalCond>
         <Accessories>Rental Conditions:</Accessories>
         <ElContainer>
-          <Ellipsis>
-          {advert.rentalConditions}
-        </Ellipsis>
+          <Ellipsis>{advert.rentalConditions}</Ellipsis>
           <Ellipsis>
             {" "}
             Mileage:{" "}

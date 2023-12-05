@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Dropdown from "../Dropdown/Dropdown";
+
 export const CarListContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -9,4 +9,11 @@ export const CarListContainer = styled.ul`
 export const CarSection = styled.section`
   width: 1184px;
   margin: 0 auto;
+`;
+
+export const NoData = styled.div`
+  margin: 0 auto;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-weight: 500;
 `;

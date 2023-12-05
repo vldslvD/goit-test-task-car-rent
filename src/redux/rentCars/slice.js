@@ -1,6 +1,6 @@
 import { rentCarsOperations } from "../rentCars";
 import { createSlice } from "@reduxjs/toolkit";
-const { fetchRentCars } = rentCarsOperations
+const { fetchRentCars } = rentCarsOperations;
 
 export const rentCarsSlice = createSlice({
   name: "rentCars",
